@@ -94,15 +94,15 @@ export default function Home() {
           )}
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4 w-[80%] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="grid grid-cols-3 gap-4  max-w-[80%] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         {images.map((image, index) => (
           <Image
             key={index} // Add a unique key prop
             className="rounded-lg"
             src={image}
             alt="Generated Image"
-            width={200} // Use appropriate width
-            height={200} // Use appropriate height
+            width={300} // Use appropriate width
+            height={300} // Use appropriate height
           />
         ))}
       </div>
