@@ -50,10 +50,6 @@ export default function Home() {
         alignItems: "center",
       }}
     >
-      {/* <input onChange={(e)=>setText(e.target.value)} type="text" placeholder="Enter text"/>
-      <button onClick={onClickHandler}>Generate Image</button>
-
-      <img width={200} height={200} src={url} alt="No Image Here" /> */}
       <div className="w-[80%] p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
           NextGen Image Generator
@@ -103,9 +99,8 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-4 w-[80%]  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         {images.map(image=>{
           return(
-            <a href="#">
-    <img className="rounded-lg" src={image} alt="" />
-  </a>
+            
+    <Image className="rounded-lg" src={image} alt=""></Image>
   
           )
         })}
